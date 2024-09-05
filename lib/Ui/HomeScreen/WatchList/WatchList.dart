@@ -13,7 +13,6 @@ class WatchList extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 70, horizontal: 20),
       child: Column(
-
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Text("WatchList",
@@ -23,37 +22,33 @@ class WatchList extends StatelessWidget {
                 fontWeight: FontWeight.w400,
                 color: Colors.white,
               )),
-          Expanded(
-            child: StreamBuilder<QuerySnapshot<Details>>(
-                stream: FireStoreUtils.getRealTimeDataFromFireStore(),
-                builder: (context, snapshot){
-                  if(snapshot.connectionState == ConnectionState.waiting){
-                    const Center(child:
-                    CircularProgressIndicator(color: Colors.white,));
-                  }
-                  if(snapshot.hasError || snapshot.data == null){
-                    return Text(snapshot.error.toString());
-                  }
-                  var watchList = snapshot.data?.docs
-                      .map((element) => element.data())
-                      .toList();
-                  return  Expanded(
-                      child: ListView.separated(
-                          itemBuilder: (context, index) =>
-                              SavedMoviesWidget(model: watchList![index]),
-                          separatorBuilder: (context, index) => const Divider(
-                            thickness: 2,
-                            color: Colors.white,
-                          ),
-                          itemCount: watchList?.length?? 0));
-
-                }),
-          ),
-
-
+          StreamBuilder<QuerySnapshot<Details>>(
+              stream: FireStoreUtils.getRealTimeDataFromFireStore(),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  const Center(
+                      child: CircularProgressIndicator(
+                    color: Colors.white,
+                  ));
+                }
+                if (snapshot.hasError || snapshot.data == null) {
+                  return Text(snapshot.error.toString());
+                }
+                var watchList = snapshot.data?.docs
+                    .map((element) => element.data())
+                    .toList();
+                return Expanded(
+                    child: ListView.separated(
+                        itemBuilder: (context, index) =>
+                            SavedMoviesWidget(model: watchList![index]),
+                        separatorBuilder: (context, index) => const Divider(
+                              thickness: 2,
+                              color: Colors.white,
+                            ),
+                        itemCount: watchList?.length ?? 0));
+              }),
         ],
       ),
     );
   }
-
 }
