@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:movies_app/model/detail/Details.dart';
 import 'package:provider/provider.dart';
+import '../../../model/detail/Details.dart';
 import '../../../providers/save_provider.dart';
 
 class SavedMoviesWidget extends StatelessWidget {

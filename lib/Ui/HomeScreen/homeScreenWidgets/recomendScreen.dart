@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/details/stackBook.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/rate.dart';
+import 'package:movie_app/Ui/HomeScreen/homeScreenWidgets/rate.dart';
+
+import 'details/stackBook.dart';
 
 class RecommendScreen extends StatefulWidget {
   const RecommendScreen({

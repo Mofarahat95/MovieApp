@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/Browse/api/ApiManager.dart';
-import 'package:movies_app/Ui/HomeScreen/Browse/movieWidget.dart';
+import 'package:movie_app/Ui/HomeScreen/Browse/api/ApiManager.dart';
+import 'package:movie_app/Ui/HomeScreen/Browse/movieWidget.dart';
 import 'api/Genres.dart';
 
 class MovieList extends StatelessWidget {

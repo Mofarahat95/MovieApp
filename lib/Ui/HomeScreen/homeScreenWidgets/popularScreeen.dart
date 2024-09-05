@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/details/detailss.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/movieName.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/smallpopular.dart';
-import 'package:movies_app/model/constant.dart';
+import 'package:movie_app/Ui/HomeScreen/homeScreenWidgets/smallpopular.dart';
 
+import '../../../model/constant.dart';
+import 'details/detailss.dart';
+import 'movieName.dart';
 
 class PopularScreen extends StatelessWidget {
   const PopularScreen({

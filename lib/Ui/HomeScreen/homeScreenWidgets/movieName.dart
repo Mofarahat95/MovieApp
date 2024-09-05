@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/model/detail/Details.dart';
+
+import '../../../model/detail/Details.dart';
 
 class MovieName extends StatelessWidget {
   const MovieName(

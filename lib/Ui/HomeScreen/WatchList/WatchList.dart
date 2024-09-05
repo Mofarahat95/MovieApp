@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/WatchList/SavedMovieWidget.dart';
-import 'package:movies_app/model/detail/Details.dart';
-import 'package:movies_app/network/firestore.dart';
+
+import '../../../model/detail/Details.dart';
+import '../../../network/firestore.dart';
+import 'SavedMovieWidget.dart';
 
 class WatchList extends StatelessWidget {
   const WatchList({super.key});

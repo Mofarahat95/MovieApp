@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/recomendScreen.dart';
-import 'package:movies_app/api/api.dart';
-import 'package:movies_app/model/constant.dart';
-import 'package:movies_app/model/detail/Details.dart';
 import 'package:provider/provider.dart';
+import '../../../../api/api.dart';
+import '../../../../model/constant.dart';
+import '../../../../model/detail/Details.dart';
 import '../../../../providers/save_provider.dart';
+import '../recomendScreen.dart';
 
 class MovieDetails extends StatefulWidget {
   const MovieDetails({super.key});

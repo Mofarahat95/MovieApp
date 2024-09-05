@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/model/constant.dart';
-import 'package:movies_app/model/detail/Details.dart';
 import 'package:provider/provider.dart';
+import '../../../model/constant.dart';
+import '../../../model/detail/Details.dart';
 import '../../../providers/save_provider.dart';
 
 class Small extends StatefulWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../model/detail/Details.dart';
 import '../network/firestore.dart';
 
 

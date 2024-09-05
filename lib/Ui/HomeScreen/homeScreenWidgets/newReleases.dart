@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/details/releasebook.dart';
+
+import 'details/releasebook.dart';
 
 class ReleasesScreen extends StatefulWidget {
   final AsyncSnapshot snapshot;

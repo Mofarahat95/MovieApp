@@ -2,8 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:movies_app/Ui/HomeScreen/Browse/api/MovieResponse/MovieResponse.dart';
-import 'package:movies_app/Ui/HomeScreen/Browse/api/sourcesResponse.dart';
+import 'package:movie_app/Ui/HomeScreen/Browse/api/MovieResponse/MovieResponse.dart';
+
+import 'SourcesResponse.dart';
 
 class ApiManager{
   static Future<SourcesResponse> getSources()async{

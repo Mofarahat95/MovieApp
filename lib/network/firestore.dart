@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+import '../model/detail/Details.dart';
+
 class FireStoreUtils{
   static CollectionReference<Details> getCollection(){
     return FirebaseFirestore.instance.collection("movies").

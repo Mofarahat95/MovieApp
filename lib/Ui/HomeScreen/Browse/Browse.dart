@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'api/ApiManager.dart';
 import 'genres.dart';
 
+
 class Browse extends StatelessWidget {
   const Browse({super.key});
 

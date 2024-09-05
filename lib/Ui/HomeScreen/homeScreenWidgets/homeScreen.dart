@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/newReleases.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/popularScreeen.dart';
-import 'package:movies_app/Ui/HomeScreen/homeScreenWidgets/recomendScreen.dart';
-import 'package:movies_app/api/api.dart';
-import 'package:movies_app/model/detail/Details.dart';
+import 'package:movie_app/Ui/HomeScreen/homeScreenWidgets/popularScreeen.dart';
+import 'package:movie_app/Ui/HomeScreen/homeScreenWidgets/recomendScreen.dart';
+
+import '../../../api/api.dart';
+import '../../../model/detail/Details.dart';
+import 'newReleases.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "homeScreen";

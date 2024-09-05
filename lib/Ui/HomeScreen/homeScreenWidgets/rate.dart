@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:movies_app/model/detail/Details.dart';
+import '../../../model/detail/Details.dart';
 
 class Rate extends StatelessWidget {
   const Rate({super.key, required this.results});
