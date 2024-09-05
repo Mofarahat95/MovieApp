@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/network/firestore.dart';
 
-import '../model/detail/Details.dart';
+import '../network/firestore.dart';
+
+
+
 
 class SaveMovieProvider extends ChangeNotifier{
 
