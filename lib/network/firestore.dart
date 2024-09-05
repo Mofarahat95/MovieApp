@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:movies_app/model/detail/Details.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class FireStoreUtils{
   static CollectionReference<Details> getCollection(){
